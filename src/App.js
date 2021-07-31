@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
+import FormularioCadastro from './componets/FormularioCadastro';
+import ListaDeNotas from './componets/ListaDeNotas';
 
-function App() {
-  return (
-    <h1>Meu primeiro app React</h1>
-  );
+class App extends Component {
+
+  render() {
+    return (
+      <section>
+        <FormularioCadastro />
+        <ListaDeNotas />
+      </section>
+    );
+  }
+
 }
 
 export default App;
